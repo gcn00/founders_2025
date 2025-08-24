@@ -1127,5 +1127,142 @@
             });
         });
     </script>
+
+
+
+    <!-- Floating Enroll Button -->
+    <div class="floating-enroll-btn" id="floatingEnrollBtn">
+        <i class="fas fa-edit"></i>
+        <span>Inquire Now</span>
+    </div>
+
+    <!-- Floating Form Modal -->
+    <div class="floating-form-modal" id="formModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <iframe src="https://crm.amasystem.net/dataentry/dataentry" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <style>
+        .floating-enroll-btn {
+            position: fixed;
+            right: 50px;
+            bottom: 30px;
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #b8941f 100%);
+            color: var(--text-dark);
+            padding: 15px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 999;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .floating-enroll-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .floating-form-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+            height: 90vh;
+            margin: 2.5vh auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--primary-maroon);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            background: var(--dark-maroon);
+            transform: rotate(90deg);
+        }
+
+        .modal-content iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .floating-enroll-btn {
+                right: 30px;
+                bottom: 20px;
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+
+            .modal-content {
+                width: 95%;
+                height: 95vh;
+                margin: 2.5vh auto;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const enrollBtn = document.getElementById('floatingEnrollBtn');
+            const modal = document.getElementById('formModal');
+            const closeBtn = document.getElementById('closeModal');
+
+            enrollBtn.addEventListener('click', function() {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
