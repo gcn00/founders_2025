@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA Education System - Founder's Day Grand Discount: 80% Off Tuition</title>
+    <meta name="description" content="Unprecedented 80% discount on tuition for Chairman Dr. Amable R. Aguiluz V's 80th Birthday. Limited to 1,000 slots - September 5, 2025 only!">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-maroon: #800000;
+            --dark-maroon: #600000;
+            --light-maroon: #a60000;
+            --accent-white: #ffffff;
+            --pure-white: #ffffff;
+            --off-white: #fafafa;
+            --light-gray: #f8f8f8;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --shadow: 0 20px 60px rgba(128, 0, 0, 0.15);
+            --shadow-light: 0 8px 32px rgba(128, 0, 0, 0.1);
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        /* Logo Styles */
+        .header-logo {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Image Sections */
+        .section-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: transform 0.5s ease;
+        }
+
+        .section-image:hover {
+            transform: scale(1.02);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+            overflow: hidden;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, 
+                rgba(128, 0, 0, 0.95) 0%, 
+                rgba(96, 0, 0, 0.9) 50%, 
+                rgba(128, 0, 0, 0.95) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff" fill-opacity="0.05" points="0,1000 1000,0 1000,1000"/></svg>');
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 70%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+            animation: shimmer 6s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            padding: 0 1rem;
+            z-index: 2;
+            position: relative;
+            width: 100%;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            animation: fadeInDown 1s ease-out;
+            max-width: 100%;
+            word-wrap: break-word;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out 0.3s both;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 3vw, 2rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.6s both;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .countdown-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 3rem auto;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 1s ease-out 0.9s both;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 0.5rem;
+            border-radius: 15px;
+            min-width: 70px;
+            backdrop-filter: blur(10px);
+            flex: 1;
+            max-width: 100px;
+        }
+
+        .countdown-number {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 900;
+            color: var(--accent-white);
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: clamp(0.7rem, 2vw, 0.9rem);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            animation: fadeInUp 1s ease-out 1.2s both;
+            width: 100%;
+        }
+
+        .cta-primary, .cta-secondary {
+            padding: 1rem 2rem;
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            white-space: nowrap;
+            min-width: fit-content;
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, var(--accent-white) 0%, #f8f8f8 100%);
+            color: var(--primary-maroon);
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.4);
+        }
+
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.6);
+        }
+
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        /* Floating particles animation */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Discount Section */
+        .discount-section {
+            padding: 4rem 0;
+            background: var(--off-white);
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .discount-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-maroon);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            margin-bottom: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInUp 0.8s ease-out 0.3s forwards;
+            max-width: 100%;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 6vw, 4rem);
+            font-weight: 900;
+            color: var(--primary-maroon);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInUp 0.8s ease-out 0.6s forwards;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .discount-highlight {
+            background: linear-gradient(135deg, var(--primary-maroon), var(--light-maroon));
+            color: white;
+            padding: 3rem 1rem;
+            border-radius: 30px;
+            margin: 4rem 0;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideInUp 0.8s ease-out 0.9s forwards;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .discount-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+        }
+
+        .discount-number {
+            font-size: clamp(3rem, 12vw, 8rem);
+            font-weight: 900;
+            color: var(--accent-white);
+            line-height: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .discount-text {
+            font-size: clamp(1rem, 3vw, 1.8rem);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .discount-subtext {
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+
+        /* Chairman Section */
+        .chairman-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--pure-white) 0%, var(--light-gray) 100%);
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .chairman-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .chairman-content {
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideInLeft 1s ease-out forwards;
+        }
+
+        .chairman-image {
+            text-align: center;
+            opacity: 0;
+            transform: translateX(50px);
+            animation: slideInRight 1s ease-out 0.3s forwards;
+        }
+
+        .chairman-photo {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: transform 0.5s ease;
+        }
+
+        .chairman-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .chairman-title {
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 900;
+            color: var(--primary-maroon);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .chairman-description {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .chairman-achievement {
+            background: var(--primary-maroon);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        /* Features Grid */
+        .features-section {
+            padding: 4rem 0;
+            background: var(--primary-maroon);
+            color: white;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .features-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--accent-white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.4s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideInUp 0.8s ease-out forwards;
+            width: 100%;
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.2s; }
+        .feature-card:nth-child(2) { animation-delay: 0.4s; }
+        .feature-card:nth-child(3) { animation-delay: 0.6s; }
+        .feature-card:nth-child(4) { animation-delay: 0.8s; }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--accent-white);
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-title {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Details Section */
+        .details-section {
+            padding: 4rem 0;
+            background: var(--off-white);
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .details-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-light);
+            transition: transform 0.4s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideInUp 0.8s ease-out forwards;
+            width: 100%;
+        }
+
+        .detail-card:nth-child(1) { animation-delay: 0.2s; }
+        .detail-card:nth-child(2) { animation-delay: 0.4s; }
+        .detail-card:nth-child(3) { animation-delay: 0.6s; }
+
+        .detail-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .detail-title {
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            font-weight: 700;
+            color: var(--primary-maroon);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: var(--light-gray);
+            border-radius: 10px;
+            width: 100%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .detail-icon {
+            color: var(--primary-maroon);
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--dark-maroon) 0%, var(--primary-maroon) 100%);
+            color: white;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            color: var(--accent-white);
+        }
+
+        .urgency-text {
+            font-size: clamp(1rem, 3vw, 1.3rem);
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .final-cta {
+            display: inline-block;
+            background: var(--accent-white);
+            color: var(--primary-maroon);
+            padding: 1.2rem 2.5rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.4s ease;
+            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4);
+            white-space: nowrap;
+        }
+
+        .final-cta:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 25px 50px rgba(255, 255, 255, 0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Mobile Responsiveness - Enhanced */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 2rem 0;
+                min-height: 100vh;
+            }
+
+            .hero-content {
+                padding: 0 1rem;
+                width: 100%;
+                max-width: 100vw;
+            }
+
+            .hero-badge {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.8rem;
+            }
+
+            .countdown {
+                gap: 0.5rem;
+                padding: 0;
+            }
+
+            .countdown-item {
+                min-width: 60px;
+                padding: 0.8rem 0.3rem;
+                flex: 1;
+            }
+
+            .countdown-container {
+                padding: 1rem;
+                margin: 2rem auto;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .cta-primary, .cta-secondary {
+                width: 100%;
+                max-width: 280px;
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .chairman-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 0 1rem;
+            }
+
+            .chairman-content {
+                transform: none;
+                animation: none;
+                opacity: 1;
+            }
+
+            .chairman-image {
+                transform: none;
+                animation: none;
+                opacity: 1;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .discount-section,
+            .chairman-section,
+            .features-section,
+            .details-section,
+            .cta-section {
+                padding: 3rem 0;
+            }
+
+            .header-logo {
+                top: 1rem;
+                left: 1rem;
+                padding: 0.6rem;
+            }
+
+            .logo-img {
+                height: 40px;
+            }
+
+            .hero-title {
+                word-break: break-word;
+                hyphens: auto;
+            }
+
+            .hero-subtitle {
+                word-break: break-word;
+                hyphens: auto;
+            }
+
+            .final-cta {
+                padding: 1rem 2rem;
+                white-space: normal;
+                text-align: center;
+            }
+
+            /* Ensure no horizontal overflow */
+            .particle {
+                display: none;
+            }
+
+            .highlight-text,
+            .chairman-name,
+            .birthday-highlight {
+                display: inline;
+                word-break: break-word;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content {
+                padding: 0 0.5rem;
+            }
+
+            .discount-container,
+            .features-container,
+            .details-container,
+            .cta-container {
+                padding: 0 0.5rem;
+            }
+
+            .chairman-container {
+                padding: 0 0.5rem;
+            }
+
+            .countdown-item {
+                min-width: 50px;
+                padding: 0.6rem 0.2rem;
+            }
+
+            .hero-badge {
+                padding: 0.5rem 1rem;
+                font-size: 0.7rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .discount-highlight {
+                padding: 2rem 1rem;
+                margin: 2rem 0;
+            }
+
+            .feature-card,
+            .detail-card {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        /* Scroll animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Sparkle animation */
+        @keyframes sparkleRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Ensure all containers stay within viewport */
+        .discount-container,
+        .chairman-container,
+        .features-container,
+        .details-container,
+        .cta-container {
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        /* Fix for large desktop screens */
+        @media (min-width: 1024px) {
+            .chairman-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 3rem;
+            }
+
+            .details-grid {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 3rem;
+            }
+
+            .discount-section,
+            .chairman-section,
+            .features-section,
+            .details-section,
+            .cta-section {
+                padding: 8rem 0;
+            }
+
+            .hero-content {
+                padding: 0 2rem;
+            }
+
+            .discount-container,
+            .features-container,
+            .details-container,
+            .cta-container {
+                padding: 0 2rem;
+            }
+
+            .chairman-container {
+                padding: 0 2rem;
+            }
+
+            .header-logo {
+                top: 2rem;
+                left: 2rem;
+                padding: 1rem;
+            }
+
+            .logo-img {
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="header-logo">
+        <!-- AI Image Prompt: "Modern minimalist logo design for AMA Education System, maroon and white color scheme, clean typography, academic institutional branding, professional university logo, sophisticated design on transparent background" -->
+        <img src="logo.png" alt="AMA Education System Logo" class="logo-img">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="particles" id="particles"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                Celebrating 80 Years of Excellence
+            </div>
+            
+            <h1 class="hero-title">
+                <span style="display: block; transform: skew(-5deg);">
+                    <span style="background: linear-gradient(45deg, #ffffff 0%, #ffd700 50%, #ffffff 100%); -webkit-background-clip: text; background-clip: text;">80% OFF</span>
+                </span>
+                <span style="display: block; font-size: 0.9em; transform: skew(-5deg); text-shadow: 3px 3px 6px rgba(0,0,0,0.3);">
+                    <span style="background: linear-gradient(45deg, #ffd700 0%, #ffffff 50%, #ffd700 100%); -webkit-background-clip: text; background-clip: text;">TUITION FEES</span>
+                </span>
+                <span class="sparkle" style="position: absolute; top: -20px; right: -20px; font-size: 2rem; animation: sparkleRotate 2s infinite linear;">✨</span>
+                <span class="sparkle" style="position: absolute; bottom: -10px; left: -10px; font-size: 1.5rem; animation: sparkleRotate 2s infinite linear reverse;">✨</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                <span class="highlight-text">Founder's Day Grand Discount</span> in honor of<br>
+                <span class="chairman-name">Chairman Dr. Amable R. Aguiluz V's</span>
+                <span class="birthday-highlight">80th Birthday</span>
+                <style>
+                    .highlight-text {
+                        background: linear-gradient(120deg, #ffd700 0%, #ffffff 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 700;
+                    }
+                    .chairman-name {
+                        position: relative;
+                        display: inline-block;
+                        color: #ffffff;
+                        font-weight: 600;
+                        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                    }
+                    .birthday-highlight {
+                        display: inline-block;
+                        background: linear-gradient(45deg, #ffd700, #ffffff);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 800;
+                        font-size: 1.2em;
+                        animation: pulse 2s infinite;
+                    }
+                    @keyframes pulse {
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.05); }
+                        100% { transform: scale(1); }
+                    }
+                </style>
+            </p>
+            
+            <div class="countdown-container">
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">12</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">04</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">23</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">45</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#enroll" class="cta-primary">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now
+                </a>
+                <a href="#details" class="cta-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discount Details Section -->
+    <section class="discount-section" id="discount">
+        <div class="discount-container">
+            <div class="section-badge scroll-reveal">Limited Time Offer</div>
+            
+            <h2 class="section-title scroll-reveal">
+                Unprecedented Education Discount
+            </h2>
+            
+            <div class="discount-highlight scroll-reveal">
+                <div class="discount-number">80%</div>
+                <div class="discount-text">Off Total School Fees</div>
+                <div class="discount-subtext">
+                    Available for ONE DAY ONLY - September 5, 2025<br>
+                    Limited to 1,000 slots on first-come, first-served basis
+                </div>
+            </div>
+
+            <!-- Discount Benefits Image -->
+            <div class="image-container scroll-reveal">
+                <!-- AI Image Prompt: "Modern Filipino university students celebrating with laptops and books, diverse group in maroon and white campus setting, joyful graduation success scene, contemporary Philippine education environment, bright lighting, professional photography style" -->
+                <img src="v2_1.jpeg" alt="Students Celebrating Educational Success" class="section-image" style="max-height: 500px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Chairman Section -->
+    <section class="chairman-section" style="text-align: center;">
+        <div class="chairman-container">
+            <div class="chairman-content">
+                <h2 class="chairman-title">
+                    Honoring a Visionary Leader
+                </h2>
+                
+                <p class="chairman-description">
+                    This extraordinary discount celebrates the 80th birthday of our esteemed Chairman, 
+                    Dr. Amable R. Aguiluz V, widely recognized as the Father of IT Education in the Philippines. 
+                    His pioneering vision has transformed thousands of lives and shaped the future of 
+                    technology education in our nation.
+                </p>
+                
+                <div class="chairman-achievement">
+                    Father of IT Education in the Philippines
+                </div>
+            </div>
+            
+            <div class="chairman-image">
+                <!-- AI Image Prompt: "Professional portrait of distinguished elderly Filipino educator chairman Dr. Amable R. Aguiluz V in formal business suit, warm confident smile, academic office background with modern university setting, sophisticated executive lighting, representing innovation and educational leadership legacy" -->
+                <img src="chairman.jpg" alt="Chairman Dr. Amable R. Aguiluz V" class="chairman-photo">
+            </div>
+        </div>
+
+        <!-- Legacy Achievement Image -->
+        <div style="max-width: 1200px; margin: 4rem auto; padding: 0 2rem;">
+            <div class="image-container scroll-reveal">
+                <!-- AI Image Prompt: "Modern Philippine IT education laboratory with advanced computers and technology equipment, students coding and programming, futuristic classroom setting, maroon and white color scheme, innovation and digital learning environment" -->
+                <img src="v2_2.jpeg" alt="Advanced IT Education Facilities" class="section-image" style="max-height: 500px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <!-- Campus Excellence Image -->
+            <div class="image-container scroll-reveal" style="margin-bottom: 4rem;">
+                <!-- AI Image Prompt: "Stunning modern Philippine university campus aerial view, contemporary architecture with maroon accents, lush green spaces, students walking between buildings, world-class educational facility, bright daylight, architectural photography" -->
+                <img src="v2_3.jpeg" alt="AMA Education System Campus" class="section-image" style="max-height: 500px; object-fit: cover;">
+            </div>
+
+            <div class="features-header scroll-reveal">
+                <h2 class="features-title">Why Choose AMA Education System?</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="feature-title">Industry-Leading Curriculum</h3>
+                    <p class="feature-description">
+                        Cutting-edge programs designed with industry partners to ensure 
+                        graduates are job-ready from day one
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Expert Faculty</h3>
+                    <p class="feature-description">
+                        Learn from certified professionals with real-world experience 
+                        in their respective fields
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="feature-title">Industry Partnerships</h3>
+                    <p class="feature-description">
+                        Guaranteed internship opportunities with 100+ partner companies 
+                        across various industries
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="feature-title">Global Certifications</h3>
+                    <p class="feature-description">
+                        Earn prestigious certifications from Microsoft, Cisco, CompTIA, 
+                        and other industry leaders
+                    </p>
+                </div>
+            </div>
+
+            <!-- Student Success Image -->
+            <div class="image-container scroll-reveal" style="margin-top: 4rem;">
+                <!-- AI Image Prompt: "Successful Filipino AMA graduates in professional business attire at modern corporate offices, diverse group showing career achievement, technology workplace setting, confident poses, professional corporate photography style" -->
+                <img src="v2_4.jpeg" alt="AMA Graduates in Professional Careers" class="section-image" style="max-height: 500px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="details-section" id="details">
+        <div class="details-container">
+            <h2 class="section-title scroll-reveal">Program Details & Requirements</h2>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3 class="detail-title">Eligible Programs</h3>
+                    <div class="detail-item">
+                        <i class="fas fa-graduation-cap detail-icon"></i>
+                        Graduate Programs (9 units minimum)
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-book detail-icon"></i>
+                        Undergraduate Programs (18 units minimum)
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-laptop detail-icon"></i>
+                        Distance Education Programs
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-stethoscope detail-icon"></i>
+                        Doctor of Medicine (Local students)
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <h3 class="detail-title">Key Dates</h3>
+                    <div class="detail-item">
+                        <i class="fas fa-bullhorn detail-icon"></i>
+                        August 25 12AM: Official announcement
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar detail-icon"></i>
+                        Sep 1-5: Enlistment period
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock detail-icon"></i>
+                        September 5: Discount available
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-credit-card detail-icon"></i>
+                        Payment deadline: 11:59 PM
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <h3 class="detail-title">Important Terms</h3>
+                    <div class="detail-item">
+                        <i class="fas fa-users detail-icon"></i>
+                        New enrollees & transferees only
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-medal detail-icon"></i>
+                        One-time benefit per student
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-money-bill detail-icon"></i>
+                        Cash payment only
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-exclamation-triangle detail-icon"></i>
+                        Not compatible with other discounts
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="enroll">
+        <div class="cta-container">
+            <h2 class="cta-title scroll-reveal">Don't Miss This Opportunity</h2>
+            
+            <p class="urgency-text scroll-reveal">
+                Only 1,000 slots available. Once they're gone, they're gone forever.<br>
+                This 80% discount will never be offered again.
+            </p>
+            
+            <a href="#" class="final-cta scroll-reveal" onclick="scrollToForm()">
+                <i class="fas fa-rocket"></i>
+                Secure Your Spot Now
+            </a>
+            
+            <div style="margin-top: 3rem; opacity: 0.8;">
+                <small>* Terms and conditions apply. Payment must be completed on September 5, 2025 by 11:59 PM</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Form Section -->
+    <section style="padding: 4rem 0; background: var(--light-gray);">
+        <div style="max-width: 800px; margin: 0 auto; padding: 0 2rem; text-align: center;">
+            <h2 style="color: var(--primary-maroon); font-size: 2.5rem; font-weight: 900; margin-bottom: 2rem;">
+                Start Your Application
+            </h2>
+            <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow);">
+                <iframe 
+                    src="https://crm.amasystem.net/dataentry/dataentry" 
+                    style="width: 100%; height: 700px; border: none;" 
+                    title="AMA Education System Enrollment Form"
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary-maroon); color: white; padding: 4rem 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="image-container scroll-reveal" style="margin-bottom: 3rem;">
+                <!-- AI Image Prompt: "Panoramic evening view of modern Philippine university campus with illuminated buildings, maroon architectural accents, students walking on pathways, prestigious educational institution atmosphere, golden hour lighting, architectural photography" -->
+                <img src="v2_5.jpeg" alt="AMA Education System Campus Evening View" class="section-image" style="max-height: 500px; object-fit: cover;">
+            </div>
+            <div style="margin-bottom: 3rem;">
+                <h3 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: var(--accent-gold);">
+                    AMA Education System
+                </h3>
+                <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;">
+                    Pioneer and Largest Network of Colleges and Universities in Asia
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Head Office</h4>
+                    <p>AMA Building 2, 59 Panay Ave., Bgy. Paligsahan</p>
+                    <p>Diliman, Quezon City</p>
+                    <p>Tel: (02) 8737 5545</p>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Contact Information</h4>
+                    <p>Email: info@amaes.edu.ph</p>
+                    <p>AMA Quezon City: (02) 8656-0654</p>
+                    <p>AMA Makati: (02) 8844 3225</p>
+                </div>
+                
+                <div>
+                    <h4 style="color: var(--accent-gold); margin-bottom: 1rem;">Follow Us</h4>
+                    <div style="display: flex; gap: 1rem; justify-content: center; font-size: 1.5rem;">
+                        <a href="https://www.facebook.com/amaeducsystem" target="_blank" style="color: white; transition: color 0.3s;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/amaeducsystem/" target="_blank" style="color: white; transition: color 0.3s;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@amaeducsystem" target="_blank" style="color: white; transition: color 0.3s;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/school/ama-university/" target="_blank" style="color: white; transition: color 0.3s;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem;">
+                <p style="opacity: 0.8;">&copy; 2024 AMA Education System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations and Countdown -->
+    <script>
+        // Particle Animation
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.width = Math.random() * 6 + 2 + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+            document.getElementById('particles').appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 25000);
+        }
+
+        // Create particles periodically
+        setInterval(createParticle, 2000);
+        
+        // Initial particles
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createParticle, i * 400);
+        }
+
+        // Countdown Timer
+        function updateCountdown() {
+            const targetDate = new Date('2025-09-05T00:00:00').getTime();
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Scroll Reveal Animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.scroll-reveal');
+            
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('revealed');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+
+        // Smooth scroll function
+        function scrollToForm() {
+            document.querySelector('iframe').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover effects to social links
+        document.querySelectorAll('footer a').forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                this.style.color = 'var(--accent-gold)';
+            });
+            link.addEventListener('mouseleave', function() {
+                this.style.color = 'white';
+            });
+        });
+
+        // Performance optimization: Reduce animations on mobile
+        if (window.innerWidth <= 768) {
+            document.querySelectorAll('.particle').forEach(particle => {
+                particle.style.display = 'none';
+            });
+        }
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+</body>
+</html>
