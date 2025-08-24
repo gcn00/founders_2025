@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA Education System - Founder's Day Grand Discount | 80% Off Tuition</title>
+    <meta name="description" content="Unprecedented 80% discount on total school fees celebrating Chairman Dr. Amable R. Aguiluz V's 80th birthday. Limited to 1,000 slots. September 5, 2025 only.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-maroon: #800000;
+            --dark-maroon: #600000;
+            --light-maroon: #a00000;
+            --accent-gold: #d4af37;
+            --pure-white: #ffffff;
+            --off-white: #f8f8f8;
+            --text-dark: #2c2c2c;
+            --text-light: #666666;
+            --shadow-light: rgba(128, 0, 0, 0.1);
+            --shadow-medium: rgba(128, 0, 0, 0.2);
+            --shadow-heavy: rgba(128, 0, 0, 0.3);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--dark-maroon) 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text {
+            color: var(--pure-white);
+        }
+
+        .hero-logo {
+            width: 200px;
+            height: auto;
+            animation: fadeInLeft 1s ease-out;
+            filter: brightness(2) contrast(2.0); /* Increase brightness to make logo more visible against dark background */
+            mix-blend-mode: screen; /* Blend mode to help logo stand out */
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInLeft 1s ease-out 0.2s both;
+        }
+
+        .hero-discount {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--accent-gold);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin: 1rem 0;
+            animation: pulse 2s infinite;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInLeft 1s ease-out 0.4s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            animation: fadeInLeft 1s ease-out 0.6s both;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #b8941f 100%);
+            color: var(--text-dark);
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--pure-white);
+            padding: 1rem 2.5rem;
+            border: 2px solid var(--pure-white);
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: var(--pure-white);
+            color: var(--primary-maroon);
+            transform: translateY(-3px);
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--pure-white);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Chairman Section */
+        .chairman-section {
+            padding: 6rem 2rem;
+            background: var(--off-white);
+            position: relative;
+        }
+
+        .chairman-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .chairman-image {
+            width: 100%;
+            height: 600px;
+            background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--dark-maroon) 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pure-white);
+            font-size: 1.2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chairman-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary-maroon);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .chairman-text p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--dark-maroon) 100%);
+            color: var(--pure-white);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .highlight-box h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Offer Details Section */
+        .offer-section {
+            padding: 6rem 2rem;
+            background: var(--pure-white);
+        }
+
+        .offer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--primary-maroon);
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .offer-card {
+            background: var(--pure-white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px var(--shadow-light);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(128, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .offer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-maroon), var(--accent-gold));
+        }
+
+        .offer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px var(--shadow-medium);
+        }
+
+        .offer-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary-maroon);
+            margin-bottom: 1rem;
+        }
+
+        .offer-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .offer-icon {
+            font-size: 3rem;
+            color: var(--primary-maroon);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--off-white) 0%, var(--pure-white) 100%);
+        }
+
+        .timeline-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--primary-maroon), var(--accent-gold));
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 3rem 0;
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .timeline-item.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content-box {
+            margin-right: 52%;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content-box {
+            margin-left: 52%;
+            text-align: left;
+        }
+
+        .timeline-content-box {
+            background: var(--pure-white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow-light);
+            position: relative;
+        }
+
+        .timeline-date {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--primary-maroon);
+            color: var(--pure-white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            z-index: 2;
+        }
+
+        /* Programs Section */
+        .programs-section {
+            padding: 6rem 2rem;
+            background: var(--pure-white);
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+        }
+
+        .program-card {
+            background: linear-gradient(135deg, var(--pure-white) 0%, var(--off-white) 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(128, 0, 0, 0.1);
+        }
+
+        .program-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--shadow-light);
+            background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--dark-maroon) 100%);
+            color: var(--pure-white);
+        }
+
+        .program-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--primary-maroon) 0%, var(--dark-maroon) 100%);
+            text-align: center;
+            color: var(--pure-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 3s infinite;
+        }
+
+        .cta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            min-width: 120px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .countdown-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--pure-white);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-maroon);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pure-white);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent-gold);
+            color: var(--text-dark);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-discount {
+                font-size: 3.5rem;
+            }
+
+            .chairman-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content-box,
+            .timeline-item:nth-child(even) .timeline-content-box {
+                margin-left: 60px;
+                margin-right: 0;
+                text-align: left;
+            }
+
+            .timeline-date {
+                left: 20px;
+            }
+
+            .countdown {
+                gap: 1rem;
+            }
+
+            .countdown-item {
+                min-width: 80px;
+                padding: 1rem;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            opacity: 0.1;
+            font-size: 2rem;
+            color: var(--primary-maroon);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .floating-element:nth-child(2) { top: 20%; right: 15%; animation-delay: 2s; }
+        .floating-element:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-element"><i class="fas fa-graduation-cap"></i></div>
+        <div class="floating-element"><i class="fas fa-trophy"></i></div>
+        <div class="floating-element"><i class="fas fa-star"></i></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- Image Prompt: "Professional AMA Education System logo in white/transparent background, clean minimalist design suitable for premium university branding" -->
+                <img src="logo.png" alt="AMA Logo" class="hero-logo">
+                <h1 class="hero-title">
+                    Founder's Day
+                    <br>Grand Discount
+                </h1>
+                <div class="hero-discount">80% OFF</div>
+                <p class="hero-subtitle">
+                    Celebrating Chairman Dr. Amable R. Aguiluz V's 80th Birthday
+                    <span class="desktop-break"></span>Father of IT Education in the Philippines
+                </p>
+                <div class="hero-cta">
+                    <a href="#offer" class="btn-primary">
+                        <i class="fas fa-graduation-cap"></i>
+                        Claim Your Discount
+                    </a>
+                    <a href="#details" class="btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Image Prompt: "Futuristic university campus with modern glass buildings, diverse students with laptops and tablets walking on a pristine campus, holographic displays showing technology concepts, golden hour lighting, premium education atmosphere" -->
+                <div class="hero-image">
+                    <img src="1.jpeg" alt="Modern Campus & Student Success" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    <!-- Modern Campus & Student Success Visualization -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chairman Section -->
+    <section class="chairman-section">
+        <div class="chairman-content animate-on-scroll">
+            <div class="chairman-image">
+                <!-- Image Prompt: "Distinguished Filipino university chairman in formal business attire, professional headshot, confident smile, executive office background, premium lighting, authoritative and approachable demeanor, representing educational leadership excellence" -->
+                <img src="chairman.jpg" alt="Chairman Dr. Amable R. Aguiluz V" style="width: 100%; height: 100%; object-fit: contain; border-radius: 20px;">
+                <!-- <br>Dr. Amable R. Aguiluz V -->
+            </div>
+            <div class="chairman-text">
+                <h2>Celebrating Excellence</h2>
+                <p>
+                    In honor of Chairman Dr. Amable R. Aguiluz V's 80th birthday, we celebrate the visionary leader recognized as the <strong>Father of IT Education in the Philippines</strong>.
+                </p>
+                <p>
+                    His pioneering work has transformed thousands of lives through innovative education, creating a legacy of excellence that spans decades. This unprecedented discount reflects our gratitude for the continued trust and support from students and families across the Philippines.
+                </p>
+                <div class="highlight-box">
+                    <h3>80 Years of Wisdom</h3>
+                    <p>80% Discount for 1,000 Students</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Details Section -->
+    <section class="offer-section" id="offer">
+        <div class="offer-content">
+            <h2 class="section-title animate-on-scroll">The Unprecedented Offer</h2>
+            <div class="offer-grid">
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>80% Total Discount</h3>
+                    <p>Unprecedented 80% discount on tuition and all school fees for new enrollees and transferees across all AMAES branches.</p>
+                </div>
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Limited to 1,000 Slots</h3>
+                    <p>Exclusive opportunity available on a first-come, first-served basis. Only 1,000 students will benefit from this historic offer.</p>
+                </div>
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>One Day Only</h3>
+                    <p>Available exclusively on September 5, 2025. Payment must be completed by 11:59 PM on the same day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="details">
+        <div class="timeline-content">
+            <h2 class="section-title animate-on-scroll">Important Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Aug 30</div>
+                    <div class="timeline-content-box">
+                        <h3>Official Announcement</h3>
+                        <p>12:00 Noon - Official announcement through AMA social media accounts</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 1-5</div>
+                    <div class="timeline-content-box">
+                        <h3>Enlistment Period</h3>
+                        <p>Five-day enlistment process with countdown beginning September 1st</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 5</div>
+                    <div class="timeline-content-box">
+                        <h3>Discount Day</h3>
+                        <p>Special offer available ONLY on this date. Payment deadline: 11:59 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="offer-content">
+            <h2 class="section-title animate-on-scroll">Eligible Programs</h2>
+            <!-- Image Prompt: "Modern technology-focused classroom with students using advanced computers, AI and robotics equipment, interactive digital whiteboards, diverse students collaborating on tech projects, premium educational environment" -->
+            <div class="hero-image" style="height: 300px; margin: 2rem 0; background: linear-gradient(135deg, var(--primary-maroon), var(--dark-maroon));">
+                <img src="2.jpeg" alt="Advanced Technology Learning Environment" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+            </div>
+            <div class="programs-grid">
+                <div class="program-card animate-on-scroll">
+                    <h4>Graduate Programs</h4>
+                    <p>Minimum 9 units required</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <h4>Undergraduate Programs</h4>
+                    <p>Semester/Trimester - 18 units minimum</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <h4>DE Programs</h4>
+                    <p>18 units (Freshmen) / 12 units (Transfer)</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <h4>Doctor of Medicine</h4>
+                    <p>Local students only - 17 units minimum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title animate-on-scroll">Don't Miss This Historic Opportunity</h2>
+            <p class="animate-on-scroll" style="font-size: 1.3rem; margin-bottom: 2rem;">
+                Limited to 1,000 slots • One day only • One-time benefit per student
+            </p>
+            
+            <div class="countdown animate-on-scroll">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+
+            <div class="cta-buttons animate-on-scroll">
+                <a href="#enrollment" class="btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem;">
+                    <i class="fas fa-rocket"></i>
+                    Enroll Now - September 5th Only
+                </a>
+            </div>
+
+            <!-- Image Prompt: "Diverse group of successful graduates in caps and gowns celebrating at graduation ceremony, modern university campus in background, golden sunset lighting, expressions of joy and achievement, premium education success story" -->
+            <div class="hero-image" style="height: 250px; margin: 3rem 0; border-radius: 15px;">
+                <img src="3.jpeg" alt="Graduate Success & Achievement Celebration" style="width: 100%; height: auto; max-height: 500px; object-fit: fit; border-radius: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="offer-section" style="background: var(--off-white);">
+        <div class="offer-content">
+            <h2 class="section-title animate-on-scroll">Eligibility & Requirements</h2>
+            <div class="offer-grid">
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>New Students Only</h3>
+                    <p>Open to new enrollees and transferees up to 3rd year standing. One-time benefit per student during entire academic journey.</p>
+                </div>
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cash Payment Required</h3>
+                    <p>Single cash payment only on September 5, 2025. Payment must be completed by 11:59 PM to secure discount.</p>
+                </div>
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Valid Through July 2026</h3>
+                    <p>Enrollment valid for semester or trimester from September 5, 2025 to July 31, 2026.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="chairman-section" style="background: var(--pure-white);">
+        <div class="chairman-content animate-on-scroll">
+            <div class="chairman-text">
+                <h2>Transform Your Future</h2>
+                <p>
+                    Join the thousands of AMA graduates who have transformed their lives through quality education. Our industry-aligned programs, expert faculty, and strong industry partnerships prepare you for immediate career success.
+                </p>
+                <div class="offer-grid" style="margin: 2rem 0;">
+                    <div style="text-align: center;">
+                        <h3 style="color: var(--primary-maroon); font-size: 2.5rem;">92%</h3>
+                        <p>Graduate Employment Rate</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h3 style="color: var(--primary-maroon); font-size: 2.5rem;">50+</h3>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h3 style="color: var(--primary-maroon); font-size: 2.5rem;">100+</h3>
+                        <p>Industry Partners</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chairman-image">
+                <!-- Image Prompt: "Professional business meeting with diverse young professionals in modern corporate office, laptops and documents on conference table, city skyline through windows, success and career advancement theme" -->
+                <img src="4.jpeg" alt="Career Success & Professional Achievement" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="offer-section">
+        <div class="offer-content">
+            <h2 class="section-title animate-on-scroll">Get Started Today</h2>
+            <div class="offer-grid">
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Sign Up Now!</h3>
+                    <p>Be one of the first 1,000 students to secure your 80% discount! Fill up our quick enrollment form today.</p>
+                    <a href="https://amaes.edu.ph" target="_blank" class="btn-primary" style="color: #ffffff; background: #800000; margin-top: 1rem; width: 100%;">
+                        <i class="fas fa-arrow-right"></i>
+                        Secure Your Slot
+                    </a>
+                </div>
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us Now</h3>
+                    <p>AMA Quezon City: (02) 8656-0654<br>AMA Makati: (02) 8844 3225</p>
+                </div>
+                <div class="offer-card animate-on-scroll">
+                    <div class="offer-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Inquiry</h3>
+                    <p>info@amaes.edu.ph<br>ama_university@amaes.edu.ph</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 style="font-family: 'Playfair Display', serif; margin-bottom: 1rem;">AMA Education System</h3>
+            <p style="margin-bottom: 2rem;">Pioneer and Largest Network of Colleges and Universities in Asia</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/amaeducsystem" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/amaeducsystem/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@amaeducsystem" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@amaeducsystem" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/school/ama-university/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem;">
+                <p>&copy; 2025 AMA Education System. All rights reserved.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">
+                    Founder's Day Grand Discount - September 5, 2025 Only
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const targetDate = new Date('September 5, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.querySelector('.countdown').innerHTML = '<h3 style="color: var(--accent-gold);">Enrollment Day Has Arrived!</h3>';
+            }
+        }
+
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Scroll Animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const windowHeight = window.innerHeight;
+
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Timeline animations
+        function animateTimeline() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const windowHeight = window.innerHeight;
+
+            timelineItems.forEach((item, index) => {
+                const itemTop = item.getBoundingClientRect().top;
+                
+                if (itemTop < windowHeight - 100) {
+                    setTimeout(() => {
+                        item.classList.add('animated');
+                    }, index * 200);
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateTimeline);
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect for floating elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelectorAll('.floating-element');
+            
+            parallax.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Add entrance animations to cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.2s';
+                    entry.target.style.animationFillMode = 'both';
+                    entry.target.style.animationName = 'fadeInUp';
+                    entry.target.style.animationDuration = '0.8s';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.offer-card, .program-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Enhanced hover effects
+        document.querySelectorAll('.offer-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
